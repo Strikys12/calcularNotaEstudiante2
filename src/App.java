@@ -10,7 +10,7 @@ public class App {
         double porcentaje2 = 0.3;
         double porcentaje3 = 0.5;
         Scanner sc = new Scanner(System.in);
-
+        
         System.out.println("Ingrese su nombre completo");
         String nombreEstudiante = sc.nextLine();
 
