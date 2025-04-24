@@ -6,11 +6,11 @@ Diseño: Tipografia, iconografia y semántica.
 Gastronomía: Costos, panadería dulce, Cocina internacional. */
 public class App {
     public static void main(String[] args) throws Exception {
-        double porcentaje1 = 0.2;
-        double porcentaje2 = 0.3;
-        double porcentaje3 = 0.5;
+
         Scanner sc = new Scanner(System.in);
-        
+        double notaParcial = 0, notaTaller = 0, notaExamenFinal =0;
+        double notaFinal = (notaParcial * 0.2) + (notaTaller * 0.3) + (notaExamenFinal * 0.5);
+
         System.out.println("Ingrese su nombre completo");
         String nombreEstudiante = sc.nextLine();
 
@@ -28,62 +28,72 @@ public class App {
                 String materia = sc.nextLine();
                 switch (materia) {
                     case "1":
-                        System.out.println("Lógica de Programación");
-                        double nota1 = 2.1 * porcentaje1;
-                        double nota2 = 4.5 * porcentaje2;
-                        double nota3 = 3.5 * porcentaje3;
-                        double notaFinal = nota1 + nota2 + nota3;
-                        if (notaFinal >= 0 && notaFinal <= 2) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                        System.out.println("Nota lógica de programación");
+                        System.out.println("Ingrese la nota parcial");
+                        notaParcial = sc.nextDouble();
+                        System.out.println("Ingrese la nota del taller");
+                        notaTaller = sc.nextDouble();
+                        System.out.println("Ingrese la nota del Examen Final");
+                        notaExamenFinal = sc.nextDouble();
+                        notaFinal = (notaParcial * 0.2) + (notaTaller * 0.3) + (notaExamenFinal * 0.5);
+                        if (notaFinal <= 2) {
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nPerdiste la materia");
                         }
                         if (notaFinal >= 2.1 && notaFinal <= 2.9) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nTienes derecho a hacer un examen de nivelaciòn");
                         }
                         if (notaFinal >= 3) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nFelicidades, ganaste la materia");
                         }
                         break;
                     case "2":
                         System.out.println("Metodologías Agiles");
-                        nota1 = 1.1 * porcentaje1;
-                        nota2 = 0.5 * porcentaje2;
-                        nota3 = 0.5 * porcentaje3;
-                        notaFinal = nota1 + nota2 + nota3;
+                        System.out.println("Ingrese la nota parcial");
+                        notaParcial = sc.nextDouble();
+                        System.out.println("Ingrese la nota del taller");
+                        notaTaller = sc.nextDouble();
+                        System.out.println("Ingrese la nota del Examen Final");
+                        notaExamenFinal = sc.nextDouble();
+                        notaFinal = (notaParcial * 0.2) + (notaTaller * 0.3) + (notaExamenFinal * 0.5);
                         if (notaFinal >= 0 && notaFinal <= 2) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nPerdiste la materia");
                         }
                         if (notaFinal >= 2.1 && notaFinal <= 2.9) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nTienes derecho a hacer un examen de nivelaciòn");
                         }
                         if (notaFinal >= 3) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nFelicidades, ganaste la materia");
                         }
                         break;
                     case "3":
                         System.out.println("Introducción a la programación");
-                        nota1 = 4.0 * porcentaje1;
-                        nota2 = 4.5 * porcentaje2;
-                        nota3 = 5.0 * porcentaje3;
-                        notaFinal = nota1 + nota2 + nota3;
+                        System.out.println("Ingrese la nota parcial");
+                        notaParcial = sc.nextDouble();
+                        System.out.println("Ingrese la nota del taller");
+                        notaTaller = sc.nextDouble();
+                        System.out.println("Ingrese la nota del Examen Final");
+                        notaExamenFinal = sc.nextDouble();
+                        notaFinal = (notaParcial * 0.2) + (notaTaller * 0.3) + (notaExamenFinal * 0.5);
                         if (notaFinal >= 0 && notaFinal <= 2) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nPerdiste la materia");
                         }
                         if (notaFinal >= 2.1 && notaFinal <= 2.9) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nTienes derecho a hacer un examen de nivelaciòn");
                         }
                         if (notaFinal >= 3) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nFelicidades, ganaste la materia");
                         }
                         break;
+
                 }
                 break;
             case "2":
@@ -93,58 +103,67 @@ public class App {
                 switch (materia) {
                     case "1":
                         System.out.println("Tipografía");
-                        double nota1 = 2.1 * porcentaje1;
-                        double nota2 = 4.5 * porcentaje2;
-                        double nota3 = 3.5 * porcentaje3;
-                        double notaFinal = nota1 + nota2 + nota3;
-                        if (notaFinal >= 0 && notaFinal <= 2) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                        System.out.println("Ingrese la nota parcial");
+                        notaParcial = sc.nextDouble();
+                        System.out.println("Ingrese la nota del taller");
+                        notaTaller = sc.nextDouble();
+                        System.out.println("Ingrese la nota del Examen Final");
+                        notaExamenFinal = sc.nextDouble();
+                        notaFinal = (notaParcial * 0.2) + (notaTaller * 0.3) + (notaExamenFinal * 0.5);
+                        if (notaFinal <= 2) {
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nPerdiste la materia");
                         }
                         if (notaFinal >= 2.1 && notaFinal <= 2.9) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nTienes derecho a hacer un examen de nivelaciòn");
                         }
                         if (notaFinal >= 3) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nFelicidades, ganaste la materia");
                         }
                         break;
                     case "2":
                         System.out.println("Iconografía");
-                        nota1 = 1.1 * porcentaje1;
-                        nota2 = 0.5 * porcentaje2;
-                        nota3 = 0.5 * porcentaje3;
-                        notaFinal = nota1 + nota2 + nota3;
-                        if (notaFinal >= 0 && notaFinal <= 2) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                        System.out.println("Ingrese la nota parcial");
+                        notaParcial = sc.nextDouble();
+                        System.out.println("Ingrese la nota del taller");
+                        notaTaller = sc.nextDouble();
+                        System.out.println("Ingrese la nota del Examen Final");
+                        notaExamenFinal = sc.nextDouble();
+                        notaFinal = (notaParcial * 0.2) + (notaTaller * 0.3) + (notaExamenFinal * 0.5);
+                        if (notaFinal <= 2) {
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nPerdiste la materia");
                         }
                         if (notaFinal >= 2.1 && notaFinal <= 2.9) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nTienes derecho a hacer un examen de nivelaciòn");
                         }
                         if (notaFinal >= 3) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nFelicidades, ganaste la materia");
                         }
                         break;
                     case "3":
                         System.out.println("Semántica");
-                        nota1 = 4.0 * porcentaje1;
-                        nota2 = 4.5 * porcentaje2;
-                        nota3 = 5.0 * porcentaje3;
-                        notaFinal = nota1 + nota2 + nota3;
-                        if (notaFinal >= 0 && notaFinal <= 2) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                        System.out.println("Ingrese la nota parcial");
+                        notaParcial = sc.nextDouble();
+                        System.out.println("Ingrese la nota del taller");
+                        notaTaller = sc.nextDouble();
+                        System.out.println("Ingrese la nota del Examen Final");
+                        notaExamenFinal = sc.nextDouble();
+                        notaFinal = (notaParcial * 0.2) + (notaTaller * 0.3) + (notaExamenFinal * 0.5);
+                        if (notaFinal <= 2) {
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nPerdiste la materia");
                         }
                         if (notaFinal >= 2.1 && notaFinal <= 2.9) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nTienes derecho a hacer un examen de nivelaciòn");
                         }
                         if (notaFinal >= 3) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nFelicidades, ganaste la materia");
                         }
                         break;
@@ -157,58 +176,67 @@ public class App {
                 switch (materia) {
                     case "1":
                         System.out.println("Costos");
-                        double nota1 = 2.1 * porcentaje1;
-                        double nota2 = 4.5 * porcentaje2;
-                        double nota3 = 3.5 * porcentaje3;
-                        double notaFinal = nota1 + nota2 + nota3;
-                        if (notaFinal >= 0 && notaFinal <= 2) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                        System.out.println("Ingrese la nota parcial");
+                        notaParcial = sc.nextDouble();
+                        System.out.println("Ingrese la nota del taller");
+                        notaTaller = sc.nextDouble();
+                        System.out.println("Ingrese la nota del Examen Final");
+                        notaExamenFinal = sc.nextDouble();
+                        notaFinal = (notaParcial * 0.2) + (notaTaller * 0.3) + (notaExamenFinal * 0.5);
+                        if (notaFinal <= 2) {
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nPerdiste la materia");
                         }
                         if (notaFinal >= 2.1 && notaFinal <= 2.9) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nTienes derecho a hacer un examen de nivelaciòn");
                         }
                         if (notaFinal >= 3) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nFelicidades, ganaste la materia");
                         }
                         break;
                     case "2":
                         System.out.println("Panaderia Dulce");
-                        nota1 = 1.1 * porcentaje1;
-                        nota2 = 0.5 * porcentaje2;
-                        nota3 = 0.5 * porcentaje3;
-                        notaFinal = nota1 + nota2 + nota3;
-                        if (notaFinal >= 0 && notaFinal <= 2) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                        System.out.println("Ingrese la nota parcial");
+                        notaParcial = sc.nextDouble();
+                        System.out.println("Ingrese la nota del taller");
+                        notaTaller = sc.nextDouble();
+                        System.out.println("Ingrese la nota del Examen Final");
+                        notaExamenFinal = sc.nextDouble();
+                        notaFinal = (notaParcial * 0.2) + (notaTaller * 0.3) + (notaExamenFinal * 0.5);
+                        if (notaFinal <= 2) {
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nPerdiste la materia");
                         }
                         if (notaFinal >= 2.1 && notaFinal <= 2.9) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nTienes derecho a hacer un examen de nivelaciòn");
                         }
                         if (notaFinal >= 3) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nFelicidades, ganaste la materia");
                         }
                         break;
                     case "3":
                         System.out.println("Cocina Internacional");
-                        nota1 = 4.0 * porcentaje1;
-                        nota2 = 4.5 * porcentaje2;
-                        nota3 = 5.0 * porcentaje3;
-                        notaFinal = nota1 + nota2 + nota3;
-                        if (notaFinal >= 0 && notaFinal <= 2) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                        System.out.println("Ingrese la nota parcial");
+                        notaParcial = sc.nextDouble();
+                        System.out.println("Ingrese la nota del taller");
+                        notaTaller = sc.nextDouble();
+                        System.out.println("Ingrese la nota del Examen Final");
+                        notaExamenFinal = sc.nextDouble();
+                        notaFinal = (notaParcial * 0.2) + (notaTaller * 0.3) + (notaExamenFinal * 0.5);
+                        if (notaFinal <= 2) {
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nPerdiste la materia");
                         }
                         if (notaFinal >= 2.1 && notaFinal <= 2.9) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nTienes derecho a hacer un examen de nivelaciòn");
                         }
                         if (notaFinal >= 3) {
-                            System.out.println(nombreEstudiante + "\n" + numeroDocumento + "\n" + notaFinal
+                            System.out.println("Nombre de estudiante:" + nombreEstudiante + "\nNúmero de Documento: " + numeroDocumento + "\nNota Final: " + notaFinal
                                     + "\nFelicidades, ganaste la materia");
                         }
                         break;
